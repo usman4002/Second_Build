@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Verification - Florida Virtual School</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            margin: 0;
+            color: #000;
+        }
+
+        .page {
+            background-color: white;
+            width: 8.5in;
+            min-height: 11in;
+            padding: 0.75in;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        /* FLVS Header Style */
+        .header {
+            margin-bottom: 40px;
+            border-bottom: 3px solid #005596; /* FLVS Blue */
+            padding-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #005596;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: #005596;
+            text-align: center;
+        }
+
+        .school-info {
+            text-align: right;
+        }
+
+        .school-name {
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+            color: #005596;
+        }
+
+        .doe-title {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .address {
+            font-size: 11px;
+            line-height: 1.4;
+        }
+
+        /* Watermark */
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 100px;
+            font-weight: bold;
+            color: rgba(0, 85, 150, 0.03);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Content */
+        .content {
+            position: relative;
+            z-index: 1;
+            font-size: 11pt;
+            line-height: 1.6;
+            padding-top: 20px;
+        }
+
+        .meta-line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .subject {
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: underline;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Table */
+        .info-table {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        .info-table td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            vertical-align: top;
+        }
+        .info-table td.label {
+            background-color: #f9f9f9;
+            font-weight: bold;
+            width: 35%;
+        }
+
+        /* Signature */
+        .signature-block {
+            margin-top: 50px;
+        }
+        .sig-font {
+            font-family: "Brush Script MT", cursive;
+            font-size: 28px;
+            margin-bottom: 0px;
+            color: #1a1a1a;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 40px;
+            left: 0.75in;
+            right: 0.75in;
+            text-align: center;
+            font-size: 9px;
+            color: #777;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .page { width: 100%; border: none; box-shadow: none; padding: 0.5in; }
+            .info-table td.label { background-color: #f9f9f9 !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <div class="watermark">FLVS</div>
+
+        <div class="header">
+            <div class="logo-placeholder">
+                FLVS
+            </div>
+            <div class="school-info">
+                <div class="doe-title">Florida Department of Education</div>
+                <h1 class="school-name">Florida Virtual School</h1>
+                <div class="address">
+                    2145 Metrocenter Blvd, Suite 100<br>
+                    Orlando, FL 32835<br>
+                    Phone: (407) 513-3587<br>
+                    www.flvs.net
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="meta-line">
+                <div><strong>Date:</strong> December 18, 2025</div>
+                <div><strong>Ref No:</strong> FLVS-HR-2025-VQ</div>
+            </div>
+
+            <p><strong>To:</strong> SheerID Verification Services<br>
+            <strong>Re:</strong> Educator Employment Verification</p>
+
+            <div class="subject">Official Memorandum of Employment</div>
+
+            <p>To Whom It May Concern,</p>
+
+            <p>This letter serves as official confirmation of employment for the individual listed below at <strong>Florida Virtual School (FLVS)</strong>. FLVS is a fully accredited, public e-learning school serving students throughout the state of Florida and worldwide.</p>
+
+            <table class="info-table">
+                <tr>
+                    <td class="label">Employee Name</td>
+                    <td><strong>[Insert Teacher Name Here]</strong></td>
+                </tr>
+                <tr>
+                    <td class="label">Current Position</td>
+                    <td>Instructional Faculty / Certified Teacher</td>
+                </tr>
+                <tr>
+                    <td class="label">Primary Department</td>
+                    <td>Secondary Education</td>
+                </tr>
+                <tr>
+                    <td class="label">Employment Status</td>
+                    <td>Active / Full-Time</td>
+                </tr>
+                <tr>
+                    <td class="label">State Certification ID</td>
+                    <td>FL-DOE-CERT-PENDING</td>
+                </tr>
+                <tr>
+                    <td><strong>Work Setting</strong></td>
+                    <td>Remote / Virtual Instructional Environment</td>
+                </tr>
+            </table>
+
+            <p>The educator named above is currently in good standing and maintains an active instructional role for the 2025-2026 academic year. This verification is provided for the purpose of confirming eligibility for professional discounts, grants, or educational resources.</p>
+
+            <div class="signature-block">
+                <p>Sincerely,</p>
+                <div class="sig-font">Louis J. Algaze</div>
+                <p><strong>Dr. Louis Algaze</strong><br>
+                President & CEO<br>
+                Florida Virtual School</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            Florida Virtual School | 2145 Metrocenter Blvd, Orlando, FL 32835 | An Equal Opportunity Employer
+        </div>
+    </div>
+
+</body>
+</html>
